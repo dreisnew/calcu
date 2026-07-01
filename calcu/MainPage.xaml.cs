@@ -1,4 +1,5 @@
-﻿namespace calcu
+﻿using calcu.Core;
+namespace calcu
 {
     public partial class MainPage : ContentPage
     {
@@ -45,12 +46,12 @@
             {
                 if (currentState == 1)
                 {
-                    firstNum = firstNum * 10 + number; 
+                    firstNum = firstNum * 10 + number;
                     this.result.Text = firstNum.ToString();
                 }
                 else
                 {
-                    secondNum = secondNum * 10 + number; 
+                    secondNum = secondNum * 10 + number;
                     this.result.Text = firstNum.ToString() + " " + operatorMath + " " + secondNum.ToString();
                 }
             }
